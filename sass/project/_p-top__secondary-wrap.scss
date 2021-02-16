@@ -1,0 +1,14 @@
+/*=======================
+top hero secondary-wrap
+====================== */
+.p-top__secondary-wrap {
+    display: flex;
+    margin-top: 88.6px;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @include mq('sp') {
+        display: block;
+        margin-top: 20px;
+    }
+}

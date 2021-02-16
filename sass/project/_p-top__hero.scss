@@ -1,0 +1,17 @@
+/*=======================
+top hero
+====================== */
+.p-top__hero {
+    position: relative;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url(../img/min/hero-bg.png) no-repeat center center / cover;
+    // background: url(../img/min/hero-bg.png) no-repeat center center / cover;
+    padding: 60px 110px 0;
+
+    @include mq('tab-only') {
+        padding: 40px 24px 0;
+    }
+
+    @include mq('sp') {
+        padding: 40px 16px 0;
+    }
+}

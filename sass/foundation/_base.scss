@@ -1,9 +1,11 @@
 /*=======================
 全体共通
 ====================== */
-// body {
-
-// }
+body {
+    font-family: $font-family--ja;
+    font-size: $fz-standard;
+    color: $color-3;
+}
 
 img {
     max-width: 100%;
@@ -14,6 +16,10 @@ img {
 a {
     text-decoration: none;
     transition: all 0.3s ease 0s;
+
+    &:hover {
+        opacity: 0.8;
+    }
 }
 
 section {
@@ -32,4 +38,3 @@ section {
         padding-bottom: 30px; //適宜指定
     }
 }
-

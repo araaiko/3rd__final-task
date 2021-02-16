@@ -1,0 +1,166 @@
+/*=======================
+global Nav
+====================== */
+.p-global-nav {
+    position: relative;
+    height: 90px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        height: inherit;
+
+        @include mq("tab-only") {
+            // width: 100%;
+            width: 767.64px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        @include mq("sp") {
+            width: 799.64px; // 矢印配置分の余白も足した幅
+        }
+    }
+}
+
+.p-global-nav__item {
+    height: inherit;
+    margin: 0 16px;
+
+    @include mq("tab-only") {
+        display: inline-block;
+    }
+
+    @include mq("sp") {
+        &:first-child {
+            margin-left: 32px; // 矢印配置分の余白
+        }
+
+        &:last-child {
+            margin-right: 32px; // 矢印配置分の余白
+        }
+    }
+
+    a {
+        height: inherit;
+        color: $color-6;
+        font-weight: bold;
+        padding-top: 25px;
+        font-size: 0.75rem;
+        display: inline-block;
+        text-align: center;
+
+        @include mq("tab-only") {
+            font-size: 0.88rem;
+            padding-top: 38px;
+        }
+
+        &::after {
+            display: block;
+            padding-top: 8px;
+            font-size: 1.38rem;
+            text-transform: uppercase;
+
+            @include mq("tab-only") {
+                display: none;
+            }
+        }
+    }
+}
+
+.p-global-nav__item--top {
+    a {
+        &::after {
+            content: "top";
+        }
+    }
+}
+
+.p-global-nav__item--news {
+    a {
+        &::after {
+            content: "news";
+        }
+    }
+}
+
+.p-global-nav__item--story {
+    a {
+        &::after {
+            content: "story";
+        }
+    }
+}
+
+.p-global-nav__item--comic {
+    a {
+        &::after {
+            content: "comic";
+        }
+    }
+}
+
+.p-global-nav__item--comments {
+    a {
+        &::after {
+            content: "comments";
+        }
+    }
+}
+
+.p-global-nav__item--casts {
+    a {
+        &::after {
+            content: "casts";
+        }
+    }
+}
+
+.p-global-nav__item--inquiry {
+    a {
+        &::after {
+            content: "inquiry";
+        }
+    }
+}
+
+.p-global-nav__item--reserve {
+    a {
+        &::after {
+            content: "reserve";
+        }
+    }
+}
+
+.p-prev-icon,
+.p-next-icon {
+    display: none;
+
+    @include mq("sp") {
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        height: 90px;
+        line-height: 90px;
+        text-align: center;
+        width: 25px;
+        font-weight: bold;
+        background-color: $color-10;
+    }
+}
+
+.p-prev-icon {
+    @include mq("sp") {
+        left: 0;
+    }
+}
+
+.p-next-icon {
+    @include mq("sp") {
+        display: block;
+        right: 0;
+    }
+}

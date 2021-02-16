@@ -4,11 +4,11 @@ l-inner
 
 .l-inner {
     width: 100%;
-    max-width: 1200px; //適宜指定
+    max-width: 810px; //適宜指定
     margin: 0 auto;
     height: inherit;
 
-    @include mq("tab") {
+    @include mq("tab-only") {
         padding-left: 24px;
         padding-right: 24px;
     }

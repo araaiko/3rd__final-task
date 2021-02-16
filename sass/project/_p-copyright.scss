@@ -1,0 +1,15 @@
+/*=======================
+Footer Copyright
+====================== */
+.p-copyright {
+    color: $color-1;
+    font-size: 0.75rem;
+    text-align: center;
+    padding-top: 30px;
+    line-height: 1.2rem;
+
+    @include mq('sp') {
+        padding-top: 23px;
+        line-height: 1.2rem;
+    }
+}

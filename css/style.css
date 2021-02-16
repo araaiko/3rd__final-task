@@ -85,6 +85,12 @@ input[type="reset"] {
 全体共通
 ====================== */
 
+body {
+	color: #333;
+	font-family: "ヒラギノ角ゴシック", "Hiragino Sans", "メイリオ", "Meiryo", sans-serif;
+	font-size: 16px;
+}
+
 img {
 	border: none;
 	height: auto;
@@ -96,44 +102,281 @@ a {
 	transition: all 0.3s ease 0s;
 }
 
+a:hover {
+	opacity: 0.8;
+}
+
 section {
 	padding-bottom: 120px;
 	padding-top: 100px;
 }
 
-.is-pc {
-	display: block;
-}
-
-.is-sp {
-	display: none;
-}
-
 /*=======================
-inner
+global Nav
 ====================== */
 
-.inner {
+/*=======================
+l-inner
+====================== */
+
+.l-inner {
 	height: inherit;
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 810px;
 	width: 100%;
 }
 
 /*=======================
-Section Title
+btn 共通
 ====================== */
 
-@media screen and (max-width: 1023px) {
+.c-btn {
+	color: #fff;
+	display: block;
+	font-size: 0.875rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+/*=======================
+Background image
+====================== */
+
+.p-body__bg::before {
+	background: url(../img/min/bg-img.png) no-repeat center center/cover;
+	content: "";
+	display: block;
+	height: 100vh;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+/*=======================
+Footer Copyright
+====================== */
+
+.p-copyright {
+	color: #fff;
+	font-size: 0.75rem;
+	line-height: 1.2rem;
+	padding-top: 30px;
+	text-align: center;
+}
+
+/*=======================
+Footer
+====================== */
+
+.p-footer {
+	background-color: #1A1A1A;
+	height: 80px;
+	width: 100%;
+}
+
+/*=======================
+global Nav
+====================== */
+
+.p-global-nav {
+	-webkit-overflow-scrolling: touch;
+	height: 90px;
+	overflow-x: auto;
+	position: relative;
+	white-space: nowrap;
+}
+
+.p-global-nav ul {
+	display: flex;
+	height: inherit;
+	justify-content: center;
+}
+
+.p-global-nav__item {
+	height: inherit;
+	margin: 0 16px;
+}
+
+.p-global-nav__item a {
+	color: #421f15;
+	display: inline-block;
+	font-size: 0.75rem;
+	font-weight: bold;
+	height: inherit;
+	padding-top: 25px;
+	text-align: center;
+}
+
+.p-global-nav__item a::after {
+	display: block;
+	font-size: 1.38rem;
+	padding-top: 8px;
+	text-transform: uppercase;
+}
+
+.p-global-nav__item--top a::after {
+	content: "top";
+}
+
+.p-global-nav__item--news a::after {
+	content: "news";
+}
+
+.p-global-nav__item--story a::after {
+	content: "story";
+}
+
+.p-global-nav__item--comic a::after {
+	content: "comic";
+}
+
+.p-global-nav__item--comments a::after {
+	content: "comments";
+}
+
+.p-global-nav__item--casts a::after {
+	content: "casts";
+}
+
+.p-global-nav__item--inquiry a::after {
+	content: "inquiry";
+}
+
+.p-global-nav__item--reserve a::after {
+	content: "reserve";
+}
+
+.p-prev-icon,
+.p-next-icon {
+	display: none;
+}
+
+/*=======================
+reserve btn
+====================== */
+
+.p-reserve-btn {
+	background-color: #c63205;
+	height: 60px;
+	line-height: 60px;
+	margin-left: auto;
+	transform: translateY(50%);
+	width: 200px;
+}
+
+/*=======================
+p-title
+====================== */
+
+.p-title {
+	font-family: "Futura-CondensedMedium", "Century Gothic", sans-serif;
+}
+
+/*=======================
+top hero date
+====================== */
+
+.p-top__date {
+	width: 40.217%;
+}
+
+/*=======================
+top hero description
+====================== */
+
+.p-top__desc {
+	color: #fff;
+	font-size: 0.875rem;
+	line-height: 1.375rem;
+	width: 36.956%;
+}
+
+.p-top__desc span {
+	font-weight: bold;
+}
+
+/*=======================
+top hero
+====================== */
+
+.p-top__hero {
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url(../img/min/hero-bg.png) no-repeat center center/cover;
+	padding: 60px 110px 0;
+	position: relative;
+}
+
+/*=======================
+top hero secondary-wrap
+====================== */
+
+.p-top__secondary-wrap {
+	align-items: flex-end;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 88.6px;
+}
+
+/*=======================
+top wrap
+====================== */
+
+.p-top__wrap {
+	margin: 0 auto;
+	max-width: 920px;
+	width: 100%;
+}
+
+/*=======================
+u-is-pc
+====================== */
+
+.u-is-pc {
+	display: block;
+}
+
+.u-is-sp {
+	display: none;
+}
+
+@media screen and (max-width: 1139px) {
 
 section {
 	padding-bottom: 50px;
 	padding-top: 90px;
 }
 
-.inner {
+}
+
+@media screen and (max-width: 991px) {
+
+.l-inner {
 	padding-left: 24px;
 	padding-right: 24px;
+}
+
+.p-global-nav ul {
+	display: block;
+	margin: 0 auto;
+	width: 767.64px;
+}
+
+.p-global-nav__item {
+	display: inline-block;
+}
+
+.p-global-nav__item a {
+	font-size: 0.88rem;
+	padding-top: 38px;
+}
+
+.p-global-nav__item a::after {
+	display: none;
+}
+
+.p-top__hero {
+	padding: 40px 24px 0;
 }
 
 }
@@ -145,17 +388,74 @@ section {
 	padding-top: 70px;
 }
 
-.is-pc {
+.l-inner {
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.p-copyright {
+	line-height: 1.2rem;
+	padding-top: 23px;
+}
+
+.p-global-nav ul {
+	width: 799.64px;
+}
+
+.p-global-nav__item:first-child {
+	margin-left: 32px;
+}
+
+.p-global-nav__item:last-child {
+	margin-right: 32px;
+}
+
+.p-prev-icon,
+.p-next-icon {
+	background-color: rgba(255, 255, 255, 0.29);
+	font-weight: bold;
+	height: 90px;
+	line-height: 90px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 25px;
+	z-index: 2;
+}
+
+.p-prev-icon {
+	left: 0;
+}
+
+.p-next-icon {
+	display: block;
+	right: 0;
+}
+
+.p-top__date {
+	width: 70%;
+}
+
+.p-top__desc {
+	margin-top: 40px;
+	width: 100%;
+}
+
+.p-top__hero {
+	padding: 40px 16px 0;
+}
+
+.p-top__secondary-wrap {
+	display: block;
+	margin-top: 20px;
+}
+
+.u-is-pc {
 	display: none;
 }
 
-.is-sp {
+.u-is-sp {
 	display: block;
-}
-
-.inner {
-	padding-left: 16px;
-	padding-right: 16px;
 }
 
 }
