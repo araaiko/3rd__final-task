@@ -1,7 +1,7 @@
 /*=======================
 top hero
 ====================== */
-.p-top__hero {
+.p-top-hero {
     position: relative;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url(../img/min/hero-bg.png) no-repeat center center / cover;
     // background: url(../img/min/hero-bg.png) no-repeat center center / cover;
@@ -13,5 +13,6 @@ top hero
 
     @include mq('sp') {
         padding: 40px 16px 0;
+        background-position: left 25% center;
     }
 }

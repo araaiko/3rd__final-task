@@ -1,14 +1,14 @@
 /*=======================
-top hero secondary-wrap
+hero title wrap (TOP以外)
 ====================== */
-.p-top__secondary-wrap {
+.p-hero__title-wrap {
     display: flex;
-    margin-top: 88.6px;
+    // margin-top: 88.6px;
     justify-content: space-between;
     align-items: flex-end;
 
     @include mq('sp') {
         display: block;
-        margin-top: 20px;
+        // margin-top: 20px;
     }
 }

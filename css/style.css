@@ -254,6 +254,67 @@ global Nav
 }
 
 /*=======================
+hero date (TOP以外)
+====================== */
+
+.p-hero__date {
+	width: 30.86419%;
+}
+
+/*=======================
+hero reserve btn (TOP以外)
+====================== */
+
+.p-hero__reserve-btn {
+	background-color: #c63205;
+	font-size: 0.75rem;
+	height: 40px;
+	line-height: 40px;
+	margin-left: auto;
+	margin-top: 15px;
+	transform: translateY(50%);
+	width: 150px;
+}
+
+/*=======================
+hero title wrap (TOP以外)
+====================== */
+
+.p-hero__title-wrap {
+	align-items: flex-end;
+	display: flex;
+	justify-content: space-between;
+}
+
+/*=======================
+hero title (TOP以外)
+====================== */
+
+.p-hero__title {
+	width: 56.79%;
+}
+
+/*=======================
+hero wrap (TOP以外)
+====================== */
+
+.p-hero__wrap {
+	margin: 0 auto;
+	max-width: 810px;
+	width: 100%;
+}
+
+/*=======================
+hero (TOP以外)
+====================== */
+
+.p-hero {
+	background: url(../img/hero-bg2.png) no-repeat center center/cover;
+	padding: 58px 165px 0;
+	position: relative;
+}
+
+/*=======================
 reserve btn
 ====================== */
 
@@ -278,7 +339,7 @@ p-title
 top hero date
 ====================== */
 
-.p-top__date {
+.p-top-hero__date {
 	width: 40.217%;
 }
 
@@ -286,32 +347,22 @@ top hero date
 top hero description
 ====================== */
 
-.p-top__desc {
+.p-top-hero__desc {
 	color: #fff;
 	font-size: 0.875rem;
 	line-height: 1.375rem;
 	width: 36.956%;
 }
 
-.p-top__desc span {
+.p-top-hero__desc span {
 	font-weight: bold;
-}
-
-/*=======================
-top hero
-====================== */
-
-.p-top__hero {
-	background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url(../img/min/hero-bg.png) no-repeat center center/cover;
-	padding: 60px 110px 0;
-	position: relative;
 }
 
 /*=======================
 top hero secondary-wrap
 ====================== */
 
-.p-top__secondary-wrap {
+.p-top-hero__secondary-wrap {
 	align-items: flex-end;
 	display: flex;
 	justify-content: space-between;
@@ -322,10 +373,20 @@ top hero secondary-wrap
 top wrap
 ====================== */
 
-.p-top__wrap {
+.p-top-hero__wrap {
 	margin: 0 auto;
 	max-width: 920px;
 	width: 100%;
+}
+
+/*=======================
+top hero
+====================== */
+
+.p-top-hero {
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url(../img/min/hero-bg.png) no-repeat center center/cover;
+	padding: 60px 110px 0;
+	position: relative;
 }
 
 /*=======================
@@ -375,7 +436,11 @@ section {
 	display: none;
 }
 
-.p-top__hero {
+.p-hero {
+	padding: 40px 24px 0;
+}
+
+.p-top-hero {
 	padding: 40px 24px 0;
 }
 
@@ -398,6 +463,10 @@ section {
 	padding-top: 23px;
 }
 
+.p-global-nav {
+	height: 60px;
+}
+
 .p-global-nav ul {
 	width: 799.64px;
 }
@@ -410,12 +479,16 @@ section {
 	margin-right: 32px;
 }
 
+.p-global-nav__item a {
+	padding-top: 24px;
+}
+
 .p-prev-icon,
 .p-next-icon {
 	background-color: rgba(255, 255, 255, 0.29);
 	font-weight: bold;
-	height: 90px;
-	line-height: 90px;
+	height: 60px;
+	line-height: 60px;
 	position: absolute;
 	text-align: center;
 	top: 0;
@@ -432,22 +505,41 @@ section {
 	right: 0;
 }
 
-.p-top__date {
+.p-hero__date {
+	margin-top: 30px;
 	width: 70%;
 }
 
-.p-top__desc {
+.p-hero__title-wrap {
+	display: block;
+}
+
+.p-hero__title {
+	width: 100%;
+}
+
+.p-hero {
+	background-image: url(../img/min/hero-bg.png);
+	padding: 50px 16px 0;
+}
+
+.p-top-hero__date {
+	width: 70%;
+}
+
+.p-top-hero__desc {
 	margin-top: 40px;
 	width: 100%;
 }
 
-.p-top__hero {
-	padding: 40px 16px 0;
-}
-
-.p-top__secondary-wrap {
+.p-top-hero__secondary-wrap {
 	display: block;
 	margin-top: 20px;
+}
+
+.p-top-hero {
+	background-position: left 25% center;
+	padding: 40px 16px 0;
 }
 
 .u-is-pc {

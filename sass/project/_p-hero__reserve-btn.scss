@@ -1,0 +1,13 @@
+/*=======================
+hero reserve btn (TOP以外)
+====================== */
+.p-hero__reserve-btn {
+    margin-left: auto;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 0.75rem;
+    background-color: $color-8;
+    transform: translateY(50%);
+    margin-top: 15px;
+}

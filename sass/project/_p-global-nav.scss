@@ -8,6 +8,10 @@ global Nav
     -webkit-overflow-scrolling: touch;
     white-space: nowrap;
 
+    @include mq('sp') {
+        height: 60px;
+    }
+
     ul {
         display: flex;
         justify-content: center;
@@ -56,6 +60,10 @@ global Nav
         @include mq("tab-only") {
             font-size: 0.88rem;
             padding-top: 38px;
+        }
+
+        @include mq('sp') {
+            padding-top: 24px;
         }
 
         &::after {
@@ -143,8 +151,8 @@ global Nav
         position: absolute;
         top: 0;
         z-index: 2;
-        height: 90px;
-        line-height: 90px;
+        height: 60px;
+        line-height: 60px;
         text-align: center;
         width: 25px;
         font-weight: bold;

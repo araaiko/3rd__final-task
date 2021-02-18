@@ -1,10 +1,11 @@
 /*=======================
-top hero date
+hero date (TOP以外)
 ====================== */
-.p-top__date {
-    width: 40.217%;
+.p-hero__date {
+    width: 30.86419%;
 
     @include mq('sp') {
         width: 70%;
+        margin-top: 30px;
     }
 }
