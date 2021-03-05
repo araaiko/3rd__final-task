@@ -1,0 +1,23 @@
+/*=======================
+story
+====================== */
+.p-top-story {
+    margin-top: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent),
+        url(../img/min/top-story-bg.png) no-repeat center top 0% / cover;
+    position: relative;
+
+    @include mq("sp") {
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            background-color: rgba(0, 0, 0, 0.3);
+            width: 100vw;
+            height: 100%;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+/*=======================
+news items wrap
+====================== */
+.p-top-news__items-wrap {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @include mq("sp") {
+        display: block;
+    }
+}

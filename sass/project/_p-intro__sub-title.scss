@@ -1,0 +1,17 @@
+/*=======================
+intro sub title
+====================== */
+.p-intro__sub-title {
+    margin-top: 15px;
+    font-size: 2.125rem;
+    text-align: center;
+    font-weight: bold;
+
+    @include mq('tab-only') {
+        font-size: 1.375rem;
+    }
+
+    @include mq('sp-only') {
+        font-size: 1.125rem;
+    }
+}

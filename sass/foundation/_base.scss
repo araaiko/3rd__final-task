@@ -15,6 +15,7 @@ img {
 
 a {
     text-decoration: none;
+    color: $color-3;
     transition: all 0.3s ease 0s;
 
     &:hover {
@@ -22,19 +23,19 @@ a {
     }
 }
 
-section {
-    padding-top: 100px; //適宜指定
-    padding-bottom: 120px; //適宜指定
-    // width: 100%;
-    // height: 100%;
+// section {
+//     padding-top: 60px; //適宜指定
+//     padding-bottom: 60px; //適宜指定
+//     // width: 100%;
+//     // height: 100%;
 
-    @include mq("tab") {
-        padding-top: 90px; //適宜指定
-        padding-bottom: 50px; //適宜指定
-    }
+//     @include mq("tab") {
+//         padding-top: 60px; //適宜指定
+//         padding-bottom: 60px; //適宜指定
+//     }
 
-    @include mq("sp") {
-        padding-top: 70px; //適宜指定
-        padding-bottom: 30px; //適宜指定
-    }
-}
+//     @include mq("sp") {
+//         padding-top: 60px; //適宜指定
+//         padding-bottom: 60px; //適宜指定
+//     }
+// }

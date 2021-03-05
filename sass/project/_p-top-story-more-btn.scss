@@ -1,0 +1,17 @@
+/*=======================
+story more btn
+====================== */
+.p-top-story-more-btn {
+    width: 115.71px;
+    height: 36.43px;
+    line-height: 36.43px;
+    text-align: center;
+    font-size: 0.875rem;
+    margin-left: auto;
+    margin-top: 8.6px;
+    background-color: $color-8;
+
+    @include mq('sp') {
+        margin: 20px auto 0;
+    }
+}

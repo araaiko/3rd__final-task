@@ -1,0 +1,17 @@
+/*=======================
+story text
+====================== */
+.p-top-story__text {
+    padding-top: 19px;
+    width: 100%;
+    max-width: 320px;
+    font-size: 0.75rem;
+    line-height: 1.3125rem;
+    color: $color-1;
+    margin-left: auto;
+
+    @include mq('sp') {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+}

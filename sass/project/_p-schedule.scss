@@ -1,13 +1,9 @@
 /*=======================
-l-inner
+section schedule
 ====================== */
-
-.l-inner {
-    width: 100%;
-    max-width: 810px; //適宜指定
-    margin: 0 auto;
-    height: inherit;
-    position: relative;
+.p-schedule {
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     @include mq("tab-only") {
         padding-left: 24px;

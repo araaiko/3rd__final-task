@@ -1,0 +1,32 @@
+/*=======================
+intro text wrap,
+intro text--left,
+intro text--right
+====================== */
+.p-intro__text-wrap {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+
+    @include mq('sp') {
+        display: block;
+    }
+}
+
+.p-intro__text--left,
+.p-intro__text--right {
+    font-size: 0.75rem;
+    line-height: 1.3125rem;
+    width: 48%;
+
+    @include mq('sp') {
+        width: 100%;
+    }
+}
+
+.p-intro__text--right {
+    @include mq('sp') {
+        margin-top: 10px;
+    }
+}
