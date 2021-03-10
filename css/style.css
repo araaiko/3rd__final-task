@@ -152,6 +152,83 @@ Background image
 }
 
 /*=======================
+comments lead
+====================== */
+
+.p-comments__lead {
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding-top: 33px;
+	text-align: center;
+}
+
+/*=======================
+comments rep-name,
+comments rep-text
+====================== */
+
+.p-comments__rep-name,
+.p-comments__rep-text {
+	color: #fff;
+	position: relative;
+	z-index: 1;
+}
+
+/*=======================
+comments rep-name
+====================== */
+
+.p-comments__rep-name {
+	font-size: 1.625rem;
+	font-weight: bold;
+}
+
+.p-comments__rep-name span {
+	font-size: 1.25rem;
+}
+
+/*=======================
+comments rep-text
+====================== */
+
+.p-comments__rep-text {
+	font-size: 0.875rem;
+	line-height: 1.375rem;
+	max-width: 420px;
+	padding-top: 15px;
+	width: 100%;
+}
+
+/*=======================
+comments rep
+====================== */
+
+.p-comments__rep {
+	background: #1A1A1A url(../img/min/comment-bg.png) no-repeat center center/cover;
+	margin-top: 33px;
+	padding: 44px 30.2px 43px;
+	position: relative;
+}
+
+.p-comments__rep::before {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+/*=======================
+comments
+====================== */
+
+.p-comments {
+	padding-top: 60px;
+}
+
+/*=======================
 Footer Copyright
 ====================== */
 
@@ -517,6 +594,21 @@ story title
 }
 
 /*=======================
+top comments more btn
+====================== */
+
+.p-top-comments-more-btn {
+	background-color: #c63205;
+	bottom: 14.5px;
+	height: 36.43px;
+	line-height: 36.43px;
+	position: absolute;
+	right: 14.3px;
+	text-align: center;
+	width: 115.71px;
+}
+
+/*=======================
 top hero date
 ====================== */
 
@@ -822,6 +914,28 @@ u-is-pc
 	padding-right: 16px;
 }
 
+.p-comments__lead {
+	font-size: 1.25rem;
+	line-height: 1.375rem;
+}
+
+.p-comments__rep-name {
+	line-height: 2.0rem;
+}
+
+.p-comments__rep-text {
+	max-width: 100%;
+}
+
+.p-comments__rep {
+	background-position: top center;
+	background-size: 100%;
+	padding-bottom: 71px;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 50%;
+}
+
 .p-copyright {
 	line-height: 1.2rem;
 	padding-top: 23px;
@@ -919,6 +1033,11 @@ u-is-pc
 .p-schedule {
 	padding-left: 16px;
 	padding-right: 16px;
+}
+
+.p-top-comments-more-btn {
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .p-top-hero__date {
