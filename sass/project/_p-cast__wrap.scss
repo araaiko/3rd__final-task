@@ -1,0 +1,18 @@
+/*=======================
+cast wrap
+====================== */
+.p-cast__wrap {
+    margin-top: 24px;
+    position: relative;
+    
+    &::before {
+        content: "";
+        background-color: $color-12;
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        width: 100vw;
+        height: calc(100% - 110px);
+        padding-bottom: 30px;
+    }
+}

@@ -1,0 +1,10 @@
+/*=======================
+cast items
+====================== */
+.p-cast__items {
+    display: flex;
+
+    @include mq('sp') {
+        display: block;
+    }
+}

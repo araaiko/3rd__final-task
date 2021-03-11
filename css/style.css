@@ -152,6 +152,117 @@ Background image
 }
 
 /*=======================
+cast country,
+cast name,
+cast profile
+====================== */
+
+.p-cast__country,
+.p-cast__name,
+.p-cast__title {
+	text-align: center;
+}
+
+/*=======================
+cast country
+====================== */
+
+.p-cast__country {
+	margin-top: 38.8px;
+}
+
+/*=======================
+cast img
+====================== */
+
+.p-cast__img {
+	border-radius: 999px;
+	height: 220px;
+	overflow: hidden;
+	width: 220px;
+}
+
+/*=======================
+cast item
+====================== */
+
+.p-cast__item {
+	margin-right: 30px;
+	max-width: 250px;
+	width: calc(100% / 3 - 30px * 2 / 3);
+}
+
+.p-cast__item:last-child {
+	margin-right: 0;
+}
+
+/*=======================
+cast items
+====================== */
+
+.p-cast__items {
+	display: flex;
+}
+
+/*=======================
+cast name
+====================== */
+
+.p-cast__name {
+	font-size: 1.125rem;
+	font-weight: bold;
+	margin-top: 13px;
+}
+
+/*=======================
+cast profile
+====================== */
+
+.p-cast__profile {
+	font-size: 0.75rem;
+	line-height: 1.3125rem;
+	margin-top: 15px;
+}
+
+/*=======================
+cast title
+====================== */
+
+.p-cast__title {
+	font-size: 0.75rem;
+	margin-top: 18px;
+	min-height: 12px;
+}
+
+/*=======================
+cast wrap
+====================== */
+
+.p-cast__wrap {
+	margin-top: 24px;
+	position: relative;
+}
+
+.p-cast__wrap::before {
+	background-color: rgba(255, 255, 255, 0.9);
+	bottom: -30px;
+	content: "";
+	height: calc(100% - 110px);
+	left: 0;
+	padding-bottom: 30px;
+	position: absolute;
+	width: 100vw;
+}
+
+/*=======================
+cast
+====================== */
+
+.p-cast {
+	padding-top: 60px;
+}
+
+/*=======================
 comments lead
 ====================== */
 
@@ -594,6 +705,18 @@ story title
 }
 
 /*=======================
+top cast more btn
+====================== */
+
+.p-top-cast-more-btn {
+	border: 5px solid #c63205;
+	color: #c63205;
+	line-height: 26px;
+	margin: 15.4px auto 0;
+	width: 115.71px;
+}
+
+/*=======================
 top comments more btn
 ====================== */
 
@@ -769,6 +892,14 @@ news
 }
 
 /*=======================
+top schedule padding top
+====================== */
+
+.p-top-schedule__padding-top {
+	padding-top: 90px;
+}
+
+/*=======================
 story text
 ====================== */
 
@@ -914,6 +1045,28 @@ u-is-pc
 	padding-right: 16px;
 }
 
+.p-cast__img {
+	margin: 0 auto;
+}
+
+.p-cast__item {
+	margin-right: 0;
+	max-width: 100%;
+	width: 100%;
+}
+
+.p-cast__item:nth-child(n + 2) {
+	margin-top: 30px;
+}
+
+.p-cast__items {
+	display: block;
+}
+
+.p-cast__profile {
+	text-align: center;
+}
+
 .p-comments__lead {
 	font-size: 1.25rem;
 	line-height: 1.375rem;
@@ -1033,6 +1186,10 @@ u-is-pc
 .p-schedule {
 	padding-left: 16px;
 	padding-right: 16px;
+}
+
+.p-top-cast-more-btn {
+	margin-top: 20px;
 }
 
 .p-top-comments-more-btn {

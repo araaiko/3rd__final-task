@@ -1,0 +1,14 @@
+/*=======================
+top cast more btn
+====================== */
+.p-top-cast-more-btn {
+    margin: 15.4px auto 0;
+    color: $color-8;
+    border: 5px solid $color-8;
+    width: 115.71px;
+    line-height: 26px;
+
+    @include mq("sp") {
+        margin-top: 20px;
+    }
+}
