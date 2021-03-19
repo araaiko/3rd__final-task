@@ -50,7 +50,7 @@ news item body
     }
 
     .p-top-news__item-body {
-        padding: 14px 15px 24.4px;
+        padding: 14px 15px 27.4px;
     }
 
     // 二列目
@@ -96,7 +96,7 @@ news item body
 
         .p-top-news__item-body {
             width: 60%;
-            padding: 14.5px 16px;
+            padding: 14.5px 15px;
 
             @include mq("sp") {
                 width: 100%;

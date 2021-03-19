@@ -3,6 +3,7 @@ hero date (TOP以外)
 ====================== */
 .p-hero__date {
     width: 30.86419%;
+    margin: 1px;
 
     @include mq('sp') {
         width: 70%;

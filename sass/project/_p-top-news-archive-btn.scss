@@ -7,7 +7,7 @@ news archive btn
     line-height: 40px;
     background-color: $color-8;
     position: absolute;
-    top: 0;
+    top: 6px;
     right: 0;
 
     @include mq('tab-only') {

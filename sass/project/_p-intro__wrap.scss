@@ -4,7 +4,7 @@ intro wrap
 .p-intro__wrap {
     width: 100%;
     // background-color: $color-10;
-    padding: 30px;
+    padding: 33px 30px 26px;
     background: $color-10 url(../img/min/intro-img.png) no-repeat top left 0/230px 207px;
 
     @include mq('tab-only') {

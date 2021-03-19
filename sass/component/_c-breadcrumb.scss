@@ -1,0 +1,21 @@
+/*=======================
+breadcrumb
+====================== */
+.c-breadcrumb {
+    width: 100%;
+    max-width: 810px;
+    margin: 33px auto 0;
+    font-size: 0.75rem;
+
+    > span {
+        &::after {
+            content: ">";
+        }
+
+        &:last-child {
+            &::after {
+                content: "";
+            }
+        }
+    }
+}
