@@ -4,8 +4,9 @@ breadcrumb
 .c-breadcrumb {
     width: 100%;
     max-width: 810px;
-    margin: 33px auto 0;
+    margin: 29px auto 0;
     font-size: 0.75rem;
+    line-height: 1.3125rem;
 
     > span {
         &::after {

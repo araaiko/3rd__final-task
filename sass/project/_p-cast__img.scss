@@ -6,8 +6,5 @@ cast img
     height: 220px;
     border-radius: 999px;
     overflow: hidden;
-
-    @include mq('sp') {
-        margin: 0 auto;
-    }
+    margin: 0 auto;
 }
