@@ -124,6 +124,18 @@ l-inner
 }
 
 /*=======================
+breadcrumb font color white
+====================== */
+
+.c-breadcrumb__font-color--white {
+	color: #fff;
+}
+
+.c-breadcrumb__font-color--white a {
+	color: #fff;
+}
+
+/*=======================
 breadcrumb
 ====================== */
 
@@ -1000,6 +1012,15 @@ p-title
 }
 
 /*=======================
+story hero
+====================== */
+
+.p-story-hero {
+	background: linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent), url(../img/min/story-bg1.png) no-repeat center top 0%/cover;
+	padding: 58px 165px 61.8px;
+}
+
+/*=======================
 story title
 ====================== */
 
@@ -1281,6 +1302,14 @@ u-is-pc
 
 .u-is-sp {
 	display: none;
+}
+
+/*=======================
+u-margin--top
+====================== */
+
+.u-margin--top {
+	margin-top: 28px;
 }
 
 @media screen and (max-width: 991px) {
