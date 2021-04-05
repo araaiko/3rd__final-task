@@ -256,9 +256,9 @@ news single next
 .c-news-single__prev a::after,
 .c-news-single__next a::before,
 .c-news-single__next a::after {
-	background-color: #1A1A1A;
+	background-color: #1a1a1a;
 	border-radius: 999px;
-	color: #F4D102;
+	color: #f4d102;
 	font-size: 1.125rem;
 	height: 32.46px;
 	line-height: 28px;
@@ -297,7 +297,7 @@ news single title wrap
 ====================== */
 
 .c-news-single__title-wrap {
-	background-color: #1A1A1A;
+	background-color: #1a1a1a;
 	padding: 9px 30px 15px;
 	width: 100%;
 }
@@ -349,20 +349,20 @@ pagination prev
 }
 
 .c-pagination__page-numbers {
-	background-color: #1A1A1A;
-	color: #F4D102;
+	background-color: #1a1a1a;
+	color: #f4d102;
 	line-height: 27px;
 }
 
 .c-pagination__page-numbers a {
-	color: #F4D102;
+	color: #f4d102;
 }
 
 .c-pagination__next,
 .c-pagination__prev {
 	background-color: transparent;
-	border: 2px solid #1A1A1A;
-	color: #1A1A1A;
+	border: 2px solid #1a1a1a;
+	color: #1a1a1a;
 	line-height: 21px;
 }
 
@@ -563,7 +563,7 @@ comments rep
 ====================== */
 
 .p-comments__rep {
-	background: #1A1A1A url(../img/min/comment-bg.png) no-repeat center center/cover;
+	background: #1a1a1a url(../img/min/comment-bg.png) no-repeat center center/cover;
 	margin-top: 33px;
 	padding: 44px 30.2px 43px;
 	position: relative;
@@ -604,7 +604,7 @@ Footer
 ====================== */
 
 .p-footer {
-	background-color: #1A1A1A;
+	background-color: #1a1a1a;
 	height: 80px;
 	width: 100%;
 }
