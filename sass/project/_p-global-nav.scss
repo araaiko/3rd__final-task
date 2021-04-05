@@ -8,7 +8,7 @@ global Nav
     -webkit-overflow-scrolling: touch;
     white-space: nowrap;
 
-    @include mq('sp') {
+    @include mq("sp") {
         height: 60px;
     }
 
@@ -62,7 +62,7 @@ global Nav
             padding-top: 38px;
         }
 
-        @include mq('sp') {
+        @include mq("sp") {
             padding-top: 24px;
         }
 

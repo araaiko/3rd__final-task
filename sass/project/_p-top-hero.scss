@@ -1,18 +1,61 @@
 /*=======================
-top hero
+p-top-hero
 ====================== */
 .p-top-hero {
     position: relative;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent), url(../img/min/hero-bg.png) no-repeat center center / cover;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent),
+        url(../img/min/hero-bg.png) no-repeat center center / cover;
     // background: url(../img/min/hero-bg.png) no-repeat center center / cover;
     padding: 60px 110px 0;
 
-    @include mq('tab-only') {
+    @include mq("tab-only") {
         padding: 40px 24px 0;
     }
 
-    @include mq('sp') {
+    @include mq("sp") {
         padding: 40px 16px 0;
         background-position: left 25% center;
+    }
+}
+
+.p-top-hero__wrap {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.p-top-hero__secondary-wrap {
+    display: flex;
+    margin-top: 88.6px;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @include mq("sp") {
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+.p-top-hero__desc {
+    width: 36.956%;
+    line-height: 1.375rem;
+    font-size: 0.875rem;
+    color: $color-1;
+
+    span {
+        font-weight: bold;
+    }
+
+    @include mq("sp") {
+        width: 100%;
+        margin-top: 40px;
+    }
+}
+
+.p-top-hero__date {
+    width: 40.217%;
+
+    @include mq("sp") {
+        width: 70%;
     }
 }

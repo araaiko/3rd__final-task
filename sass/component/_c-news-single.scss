@@ -1,6 +1,121 @@
 /*=======================
-news single
+c-news-single
 ====================== */
 .c-news-single {
     padding-top: 28px;
+}
+
+.c-news-single__post {
+    margin-top: 32px;
+    box-shadow: 0 0 17.45px $color-13;
+}
+
+.c-news-single__title-wrap {
+    width: 100%;
+    padding: 9px 30px 15px;
+    background-color: $color-4;
+}
+
+.c-news-single__date {
+    color: $color-1;
+    font-size: 0.75rem;
+}
+
+.c-news-single__title {
+    color: $color-1;
+    font-size: 1.625rem;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.c-news-single__body {
+    padding: 27px 30px 1px;
+    background-color: $color-12;
+    line-height: 1.625rem;
+
+    h2 {
+        font-size: 1.375rem;
+        margin-bottom: 26px;
+        font-weight: bold;
+    }
+
+    h3 {
+        font-size: 1.125rem;
+        margin-bottom: 27px;
+        font-weight: bold;
+    }
+
+    p {
+        margin-bottom: 26px;
+    }
+}
+
+/* pagination */
+.c-news-single__pagination {
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.c-news-single__prev,
+.c-news-single__next {
+    width: calc(100% / 2 - 30px * 1 / 2);
+    max-width: 390px;
+
+    a {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        line-height: 1.3125rem;
+        position: relative;
+
+        time {
+            font-size: 0.75rem;
+        }
+
+        p {
+            font-size: 0.875rem;
+            font-weight: bold;
+        }
+
+        &::before,
+        &::after {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 32.46px;
+            height: 32.46px;
+            background-color: $color-4;
+            border-radius: 999px;
+            font-size: 1.125rem;
+            color: $color-9;
+            text-align: center;
+            line-height: 28px;
+        }
+    }
+}
+
+.c-news-single__prev {
+    margin-right: 30px;
+
+    a {
+        padding-left: 45px;
+
+        &::before {
+            content: "<";
+            left: 0;
+        }
+    }
+}
+
+.c-news-single__next {
+    a {
+        padding-right: 45px;
+        text-align: right;
+
+        &::after {
+            content: ">";
+            right: 0;
+        }
+    }
 }

@@ -1,7 +1,7 @@
 /*=======================
-top comments more btn
+p-top-comments
 ====================== */
-.p-top-comments-more-btn {
+.p-top-comments__more-btn {
     width: 115.71px;
     height: 36.43px;
     line-height: 36.43px;
@@ -11,7 +11,7 @@ top comments more btn
     right: 14.3px;
     bottom: 14.5px;
 
-    @include mq('sp') {
+    @include mq("sp") {
         left: 50%;
         transform: translateX(-50%);
     }

@@ -1,5 +1,5 @@
 /*=======================
-section schedule
+p-schedule
 ====================== */
 .p-schedule {
     padding-top: 60px;
@@ -14,4 +14,88 @@ section schedule
         padding-left: 16px;
         padding-right: 16px;
     }
+}
+
+.p-schedule__wrap {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 33px 72px 60px;
+    background-color: $color-10;
+
+    @include mq("tab-only") {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.p-schedule__reserve-link {
+    text-decoration: underline;
+}
+
+.p-schedule__reserve-btn {
+    width: 193px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 0.8125rem;
+    background-color: $color-8;
+
+    @include mq("sp") {
+        margin: 20px auto 0;
+    }
+}
+
+.p-schedule__place {
+    margin-left: 30px;
+    margin-right: 28px;
+}
+
+.p-schedule__item {
+    display: flex;
+    font-size: 1.25rem;
+    line-height: 1.4rem;
+    font-weight: bold;
+    margin-top: 23px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    @include mq("sp") {
+        font-size: 1rem;
+    }
+}
+
+.p-schedule__inquiry-btn {
+    width: 193px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 0.8125rem;
+    background-color: $color-7;
+    margin-right: 30px;
+
+    @include mq("sp") {
+        margin: 0 auto;
+    }
+}
+
+.p-schedule__date {
+    margin-right: 13px;
+}
+
+.p-schedule__button-wrap {
+    margin-top: 29px;
+    display: flex;
+    // flex-wrap: wrap;
+    justify-content: center;
+
+    @include mq("sp") {
+        display: block;
+    }
+}
+
+.p-schedule__body {
+    margin-top: 32px;
 }

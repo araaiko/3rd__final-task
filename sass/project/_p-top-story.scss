@@ -1,5 +1,5 @@
 /*=======================
-story
+p-story
 ====================== */
 .p-top-story {
     margin-top: 62px;
@@ -19,5 +19,35 @@ story
             width: 100vw;
             height: 100%;
         }
+    }
+}
+
+.p-top-story-more-btn {
+    width: 115.71px;
+    height: 36.43px;
+    line-height: 36.43px;
+    text-align: center;
+    font-size: 0.875rem;
+    margin-left: auto;
+    margin-top: 6px;
+    background-color: $color-8;
+
+    @include mq("sp") {
+        margin: 20px auto 0;
+    }
+}
+
+.p-top-story__text {
+    padding-top: 19px;
+    width: 100%;
+    max-width: 320px;
+    font-size: 0.75rem;
+    line-height: 1.3125rem;
+    color: $color-1;
+    margin-left: auto;
+
+    @include mq("sp") {
+        margin: 0 auto;
+        max-width: 100%;
     }
 }

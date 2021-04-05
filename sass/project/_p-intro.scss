@@ -1,6 +1,64 @@
 /*=======================
-introduction
+p-intro
 ====================== */
 .p-intro {
     padding-top: 60px;
+}
+
+.p-intro__sub-title {
+    margin-top: 19px;
+    font-size: 2.125rem;
+    text-align: center;
+    font-weight: bold;
+
+    @include mq("tab-only") {
+        font-size: 1.375rem;
+    }
+
+    @include mq("sp-only") {
+        font-size: 1.125rem;
+    }
+}
+
+.p-intro__wrap {
+    width: 100%;
+    // background-color: $color-10;
+    padding: 33px 30px 26px;
+    background: $color-10 url(../img/min/intro-img.png) no-repeat top left 0/230px 207px;
+
+    @include mq("tab-only") {
+        background-size: 25%;
+    }
+
+    @include mq("sp-only") {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+.p-intro__text-wrap {
+    margin-top: 26px;
+    display: flex;
+    justify-content: space-between;
+
+    @include mq("sp") {
+        display: block;
+    }
+}
+
+.p-intro__text--left,
+.p-intro__text--right {
+    font-size: 0.75rem;
+    line-height: 1.3125rem;
+    width: 48%;
+
+    @include mq("sp") {
+        width: 100%;
+    }
+}
+
+.p-intro__text--right {
+    @include mq("sp") {
+        margin-top: 10px;
+    }
 }

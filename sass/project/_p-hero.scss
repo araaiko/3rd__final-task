@@ -7,12 +7,59 @@ hero (TOP以外)
     background: url(../img/hero-bg2.png) no-repeat center center / cover;
     padding: 58px 165px 0;
 
-    @include mq('tab-only') {
+    @include mq("tab-only") {
         padding: 40px 24px 0;
     }
 
-    @include mq('sp') {
+    @include mq("sp") {
         padding: 50px 16px 0;
         background-image: url(../img/min/hero-bg.png);
     }
+}
+
+.p-hero__wrap {
+    width: 100%;
+    max-width: 810px;
+    margin: 0 auto;
+}
+
+.p-hero__title-wrap {
+    display: flex;
+    // margin-top: 88.6px;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    @include mq("sp") {
+        display: block;
+        // margin-top: 20px;
+    }
+}
+
+.p-hero__title {
+    width: 56.79%;
+
+    @include mq("sp") {
+        width: 100%;
+    }
+}
+
+.p-hero__date {
+    width: 30.86419%;
+    margin: 1px;
+
+    @include mq("sp") {
+        width: 70%;
+        margin-top: 30px;
+    }
+}
+
+.p-hero__reserve-btn {
+    margin-left: auto;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 0.75rem;
+    background-color: $color-8;
+    transform: translateY(50%);
+    margin-top: 15px;
 }

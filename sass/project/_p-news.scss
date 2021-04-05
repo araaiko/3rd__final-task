@@ -1,6 +1,12 @@
 /*=======================
-news item date
+p-news
 ====================== */
+.p-news__item-title {
+    line-height: 1.3125rem;
+    font-weight: bold;
+    padding-top: 4px;
+}
+
 .p-news__item-date {
     color: $color-2;
     font-size: 0.75rem;

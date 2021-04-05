@@ -1,8 +1,12 @@
 /*=======================
-story hero
+p-story
 ====================== */
-.p-story-hero {
+.p-story__hero {
     padding: 58px 165px 61.8px;
     background: linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent),
         url(../img/min/story-bg1.png) no-repeat center top 0% / cover;
+}
+
+.p-story__title {
+    color: $color-1;
 }

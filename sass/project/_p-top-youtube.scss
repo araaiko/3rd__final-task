@@ -1,8 +1,11 @@
 /*=======================
-youtube wrap,
-iframe
+p-top-youtube
 ====================== */
-.p-youtube__wrap {
+.p-top-youtube {
+    padding-top: 60px;
+}
+
+.p-top-youtube__wrap {
     position: relative;
     width: 100%;
     padding-top: 450px / 810px * 100%; // 高さ ÷ 横幅 × 100%
