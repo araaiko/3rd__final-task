@@ -10,3 +10,37 @@ p-story
 .p-story__title {
     color: $color-1;
 }
+
+.p-story__hero-item {
+    color: $color-1;
+}
+
+.p-story__item-wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    @include mq("sp") {
+        display: block;
+    }
+}
+
+.p-story__item-subtitle,
+.p-story__item-text {
+    width: calc(100% / 2 - 30px * 1 / 2);
+}
+
+.p-story__item-subtitle {
+    font-size: 1.625rem;
+    margin-right: 30px;
+    max-width: 390px;
+    text-align: center;
+    font-weight: bold;
+    line-height: (21 / 26);
+}
+
+.p-story__item-text {
+    max-width: 390px;
+    font-size: 0.75rem;
+    line-height: (22 / 12);
+}

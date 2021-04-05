@@ -846,6 +846,36 @@ p-story
 	color: #fff;
 }
 
+.p-story__hero-item {
+	color: #fff;
+}
+
+.p-story__item-wrap {
+	align-items: center;
+	display: flex;
+	width: 100%;
+}
+
+.p-story__item-subtitle,
+.p-story__item-text {
+	width: calc(100% / 2 - 30px * 1 / 2);
+}
+
+.p-story__item-subtitle {
+	font-size: 1.625rem;
+	font-weight: bold;
+	line-height: 0.80769;
+	margin-right: 30px;
+	max-width: 390px;
+	text-align: center;
+}
+
+.p-story__item-text {
+	font-size: 0.75rem;
+	line-height: 1.83333;
+	max-width: 390px;
+}
+
 /*=======================
 p-top-cast
 ====================== */
@@ -1308,6 +1338,10 @@ u-margin--top
 }
 
 .p-schedule__button-wrap {
+	display: block;
+}
+
+.p-story__item-wrap {
 	display: block;
 }
 
