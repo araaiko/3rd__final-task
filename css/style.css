@@ -1199,6 +1199,11 @@ u-margin--top
 	padding-right: 30px;
 }
 
+.p-story__hero-wrap {
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
 .p-top-hero {
 	padding: 40px 24px 0;
 }
@@ -1375,8 +1380,57 @@ u-margin--top
 	display: block;
 }
 
+.p-story__hero-wrap {
+	padding-bottom: 40px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 40px;
+}
+
+.p-story__hero-items {
+	margin-top: 30px;
+}
+
 .p-story__item-wrap {
 	display: block;
+}
+
+.p-story__item-subtitle,
+.p-story__item-text {
+	width: 100%;
+}
+
+.p-story__item-subtitle {
+	max-width: 100%;
+}
+
+.p-story__item-text {
+	max-width: 100%;
+}
+
+.p-story__hero-item-text {
+	margin-top: 25px;
+}
+
+.p-story__item:nth-child(2n) {
+	background-position: right 80% center;
+}
+
+.p-story__item {
+	background-position: left 95% bottom;
+	padding-bottom: 40px;
+	padding-top: 40px;
+	position: relative;
+}
+
+.p-story__item::before {
+	background-color: rgba(0, 0, 0, 0.4);
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 .p-top-cast__more-btn {

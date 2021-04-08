@@ -10,6 +10,18 @@ p-story
     background-repeat: no-repeat;
     background-position: center top 0%;
     background-size: cover;
+
+    @include mq("tab-only") {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    @include mq("sp") {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 .p-story__title {
@@ -18,6 +30,10 @@ p-story
 
 .p-story__hero-items {
     margin-top: 60px;
+
+    @include mq("sp") {
+        margin-top: 30px;
+    }
 }
 
 .p-story__hero-item {
@@ -37,6 +53,10 @@ p-story
 .p-story__item-subtitle,
 .p-story__item-text {
     width: calc(100% / 2 - 30px * 1 / 2);
+
+    @include mq("sp") {
+        width: 100%;
+    }
 }
 
 .p-story__item-subtitle {
@@ -46,6 +66,10 @@ p-story
     text-align: center;
     font-weight: bold;
     line-height: (21 / 26);
+
+    @include mq("sp") {
+        max-width: 100%;
+    }
 }
 
 .p-story__item-text {
@@ -53,6 +77,16 @@ p-story
     font-size: 0.75rem;
     line-height: (22 / 12);
     color: $color-1;
+
+    @include mq("sp") {
+        max-width: 100%;
+    }
+}
+
+.p-story__hero-item-text {
+    @include mq("sp") {
+        margin-top: 25px;
+    }
 }
 
 .p-story__items {
@@ -70,6 +104,29 @@ p-story
     &:nth-child(2n) {
         .p-story__item-text {
             margin-left: auto;
+        }
+
+        @include mq("sp") {
+            background-position: right 80% center;
+        }
+    }
+
+    @include mq("sp") {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-position: left 95% bottom;
+        position: relative;
+    }
+
+    &::before {
+        @include mq("sp") {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: $color-15;
+            height: 100%;
         }
     }
 }
