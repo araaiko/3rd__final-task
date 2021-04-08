@@ -19,3 +19,9 @@ l-inner
         padding-right: 16px;
     }
 }
+
+.l-inner--layout-width {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+}

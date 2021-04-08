@@ -2,13 +2,22 @@
 p-story
 ====================== */
 .p-story__hero {
+    background-color: $color-14;
+}
+
+.p-story__hero-wrap {
     padding: 58px 165px 61.8px;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent),
-        url(../img/min/story-bg1.png) no-repeat center top 0% / cover;
+    background-repeat: no-repeat;
+    background-position: center top 0%;
+    background-size: cover;
 }
 
 .p-story__title {
     color: $color-1;
+}
+
+.p-story__hero-items {
+    margin-top: 60px;
 }
 
 .p-story__hero-item {
@@ -43,4 +52,24 @@ p-story
     max-width: 390px;
     font-size: 0.75rem;
     line-height: (22 / 12);
+    color: $color-1;
+}
+
+.p-story__items {
+    background-color: $color-14;
+}
+
+.p-story__item {
+    padding-top: 56px;
+    padding-bottom: 58px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: $color-14;
+
+    &:nth-child(2n) {
+        .p-story__item-text {
+            margin-left: auto;
+        }
+    }
 }
