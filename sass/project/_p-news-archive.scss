@@ -3,6 +3,10 @@ p-news-archive
 ====================== */
 .p-news-archive {
     padding-top: 27.9px;
+
+    @include mq('sp') {
+        padding-top: 20px;
+    }
 }
 
 .p-news-archive__items-wrap {
@@ -12,6 +16,7 @@ p-news-archive
 
     @include mq("sp") {
         display: block;
+        padding-top: 20px;
     }
 }
 

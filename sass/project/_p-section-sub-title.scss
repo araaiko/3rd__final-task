@@ -1,0 +1,11 @@
+/*=======================
+p-section-sub-title
+====================== */
+.p-section-sub-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+
+    @include mq('sp') {
+        font-size: 1.125rem;
+    }
+}

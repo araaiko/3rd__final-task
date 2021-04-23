@@ -10,6 +10,7 @@ p-story
     position: relative;
 
     @include mq("sp") {
+        margin-top: 40px;
         &::before {
             position: absolute;
             top: 0;

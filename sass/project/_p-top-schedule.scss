@@ -1,6 +1,10 @@
 /*=======================
 p-top-schedule
 ====================== */
-.p-top-schedule__padding-top {
+.p-top-schedule__padding {
     padding-top: 90px;
+
+    @include mq('sp') {
+        padding-top: 70px;
+    }
 }
