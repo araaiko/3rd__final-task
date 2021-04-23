@@ -1,6 +1,26 @@
 /*=======================
 p-top-comments
 ====================== */
+.p-top-comments {
+    padding-top: 63px;
+
+    @include mq("sp") {
+        padding-top: 40px;
+    }
+}
+
+.p-top-comments__lead {
+    padding-top: 37px;
+}
+
+.p-top-comments__rep {
+    margin-top: 33px;
+
+    @include mq('sp') {
+        padding-bottom: 71px;
+    }
+}
+
 .p-top-comments__more-btn {
     width: 115.71px;
     height: 36.43px;

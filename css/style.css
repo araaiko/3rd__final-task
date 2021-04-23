@@ -463,12 +463,13 @@ p-comments
 ====================== */
 
 .p-comments {
-	padding-top: 63px;
+	margin-top: 27.9px;
+	padding-bottom: 8px;
 }
 
 .p-comments__rep {
 	background: #1a1a1a url(../img/min/comment-bg.png) no-repeat center center/cover;
-	margin-top: 33px;
+	margin-top: 41px;
 	padding: 44px 30.2px 43px;
 	position: relative;
 }
@@ -512,8 +513,46 @@ p-comments
 .p-comments__lead {
 	font-size: 1.5rem;
 	font-weight: bold;
-	padding-top: 37px;
+	padding-top: 28px;
 	text-align: center;
+}
+
+.p-comments__items {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.p-comments__item {
+	margin-right: 30px;
+	margin-top: 30px;
+	max-width: 250px;
+	width: calc(100% / 3 - 30px * 2 / 3);
+}
+
+.p-comments__item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.p-comments__name {
+	font-size: 1.375rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.p-comments__position-title {
+	color: #666666;
+	font-size: 0.75rem;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.p-comments__text {
+	line-height: 1.625;
+	margin-top: 13px;
+}
+
+.p-comments__schedule {
+	padding-top: 68px;
 }
 
 /*=======================
@@ -955,6 +994,18 @@ p-top-cast
 p-top-comments
 ====================== */
 
+.p-top-comments {
+	padding-top: 63px;
+}
+
+.p-top-comments__lead {
+	padding-top: 37px;
+}
+
+.p-top-comments__rep {
+	margin-top: 33px;
+}
+
 .p-top-comments__more-btn {
 	background-color: #c63205;
 	bottom: 14.5px;
@@ -1345,14 +1396,14 @@ u-margin--top
 }
 
 .p-comments {
-	padding-top: 40px;
+	margin-top: 20px;
 }
 
 .p-comments__rep {
 	background-position: top center;
 	background-size: 100%;
 	margin-top: 20px;
-	padding-bottom: 71px;
+	padding-bottom: 33px;
 	padding-left: 25px;
 	padding-right: 25px;
 	padding-top: 50%;
@@ -1367,9 +1418,19 @@ u-margin--top
 }
 
 .p-comments__lead {
-	font-size: 1.25rem;
+	font-size: 1.125rem;
 	line-height: 1.375;
 	padding-top: 15px;
+}
+
+.p-comments__items {
+	display: block;
+}
+
+.p-comments__item {
+	margin-right: 0;
+	max-width: 100%;
+	width: 100%;
 }
 
 .p-copyright {
@@ -1557,6 +1618,14 @@ u-margin--top
 
 .p-top-cast__more-btn {
 	margin-top: 20px;
+}
+
+.p-top-comments {
+	padding-top: 40px;
+}
+
+.p-top-comments__rep {
+	padding-bottom: 71px;
 }
 
 .p-top-comments__more-btn {
