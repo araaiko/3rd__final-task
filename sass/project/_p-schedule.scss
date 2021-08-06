@@ -35,6 +35,61 @@ p-schedule
     text-decoration: underline;
 }
 
+.p-schedule__place {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.p-schedule__item {
+    display: flex;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    font-weight: bold;
+    margin-top: 21px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    p,
+    a {
+        font-weight: bold;
+    }
+
+    @include mq("sp") {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+.p-schedule__button-wrap {
+    margin-top: 27px;
+    width: 100%;
+    max-width: 416.2px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+
+    @include mq("sp") {
+        display: block;
+    }
+}
+
+.p-schedule__inquiry-btn {
+    width: 193px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 0.8125rem;
+    background-color: $color-7;
+
+    @include mq("sp") {
+        margin: 0 auto;
+    }
+}
+
 .p-schedule__reserve-btn {
     width: 193px;
     height: 60px;
@@ -47,57 +102,12 @@ p-schedule
     }
 }
 
-.p-schedule__place {
-    margin-left: 30px;
-    margin-right: 28px;
-}
-
-.p-schedule__item {
-    display: flex;
-    font-size: 1.25rem;
-    line-height: 1.4rem;
-    font-weight: bold;
-    margin-top: 23px;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    &:first-child {
-        margin-top: 0;
-    }
-
-    @include mq("sp") {
-        font-size: 1rem;
-    }
-}
-
-.p-schedule__inquiry-btn {
-    width: 193px;
-    height: 60px;
-    line-height: 60px;
-    font-size: 0.8125rem;
-    background-color: $color-7;
-    margin-right: 30px;
-
-    @include mq("sp") {
-        margin: 0 auto;
-    }
-}
-
 .p-schedule__date {
-    margin-right: 13px;
-}
-
-.p-schedule__button-wrap {
-    margin-top: 29px;
-    display: flex;
-    // flex-wrap: wrap;
-    justify-content: center;
-
-    @include mq("sp") {
-        display: block;
-    }
+    margin-right: 9px;
 }
 
 .p-schedule__body {
     margin-top: 32px;
+    width: 100%;
+    max-width: 656px;
 }

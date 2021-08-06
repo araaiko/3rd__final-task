@@ -2,15 +2,11 @@
 p-cast
 ====================== */
 .p-cast {
-    padding-top: 63px;
-
-    @include mq('sp') {
-        padding-top: 40px;
-    }
+    margin-top: 28px;
 }
 
 .p-cast__wrap {
-    margin-top: 28px;
+    margin-top: 31px;
     position: relative;
 
     &::before {
@@ -24,7 +20,7 @@ p-cast
         padding-bottom: 30px;
     }
 
-    @include mq('sp') {
+    @include mq("sp") {
         margin-top: 20px;
 
         &::before {
@@ -68,7 +64,7 @@ p-cast
     overflow: hidden;
     margin: 0 auto;
 
-    @include mq('sp') {
+    @include mq("sp") {
         width: 180px;
         height: 180px;
     }
@@ -83,7 +79,7 @@ p-cast
 .p-cast__country {
     margin-top: 38.8px;
 
-    @include mq('sp') {
+    @include mq("sp") {
         margin-top: 20px;
     }
 }
@@ -99,7 +95,7 @@ p-cast
     font-size: 0.75rem;
     min-height: 12px;
 
-    @include mq('sp') {
+    @include mq("sp") {
         min-height: 0;
     }
 }

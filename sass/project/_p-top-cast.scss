@@ -1,8 +1,16 @@
 /*=======================
 p-top-cast
 ====================== */
+.p-top-cast {
+    padding-top: 28px;
+}
+
+.p-top-cast__wrap {
+    margin-top: 28px;
+}
+
 .p-top-cast__more-btn {
-    margin: 9px auto 0;
+    margin: 8px auto 0;
     color: $color-8;
     border: 5px solid $color-8;
     width: 115.71px;

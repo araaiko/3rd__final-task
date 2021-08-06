@@ -26,7 +26,7 @@ p-top-hero
 
 .p-top-hero__secondary-wrap {
     display: flex;
-    margin-top: 88.6px;
+    margin-top: 82.6px;
     justify-content: space-between;
     align-items: flex-end;
 
@@ -36,9 +36,16 @@ p-top-hero
     }
 }
 
-.p-top-hero__desc {
+.p-top-hero__desc-wrap {
     width: 36.956%;
-    line-height: 1.375rem;
+
+    p:nth-child(n + 2) {
+        margin-top: 7px;
+    }
+}
+
+.p-top-hero__desc {
+    line-height: 1.57142857;
     font-size: 0.875rem;
     color: $color-1;
 

@@ -14,13 +14,16 @@ global Nav
 
     ul {
         display: flex;
-        justify-content: center;
         height: inherit;
+        justify-content: space-between;
+        max-width: 664.28px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
 
         @include mq("tab-only") {
             width: 760px; // px指定で
             margin: 0 auto;
-            display: block;
         }
 
         @include mq("sp") {
@@ -31,12 +34,6 @@ global Nav
 
 .p-global-nav__item {
     height: inherit;
-    margin: 0 17px;
-
-    @include mq("tab-only") {
-        display: inline-block;
-        margin: 0 15px;
-    }
 
     @include mq("sp") {
         &:first-child {
