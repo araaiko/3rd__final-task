@@ -375,7 +375,7 @@ p-cast
 ====================== */
 
 .p-cast {
-	margin-top: 28px;
+	margin-top: 32px;
 }
 
 .p-cast__wrap {
@@ -445,6 +445,110 @@ p-cast
 }
 
 /*=======================
+p-cast top
+====================== */
+
+.p-cast__wrap--top::before {
+	bottom: -35px;
+	padding-bottom: 35px;
+}
+
+/*=======================
+p-cast middle
+====================== */
+
+.p-cast__wrap--middle {
+	margin-top: 95.8px;
+	padding-bottom: 35.5px;
+}
+
+.p-cast__items--middle {
+	align-items: flex-start;
+	flex-wrap: wrap;
+}
+
+.p-cast__item--middle {
+	display: flex;
+	margin-right: 30px;
+	width: calc(100% / 2 - 30px * 1 / 2);
+}
+
+.p-cast__item--middle:nth-child(2n) {
+	margin-right: 0;
+}
+
+.p-cast__item--middle:nth-child(n + 3) {
+	margin-top: 41.5px;
+}
+
+.p-cast__img--middle {
+	height: 129.25px;
+	margin: 0 10.8px 0 0;
+	width: 129.25px;
+}
+
+.p-cast__country--middle,
+.p-cast__name--middle,
+.p-cast__title--middle {
+	text-align: left;
+}
+
+.p-cast__country--middle {
+	font-size: 1.0575rem;
+	margin-top: 0;
+}
+
+.p-cast__name--middle {
+	font-size: 1.41rem;
+	margin-top: 10px;
+}
+
+.p-cast__title--middle {
+	margin-top: 15px;
+}
+
+/*=======================
+p-cast under
+====================== */
+
+.p-cast__wrap--under {
+	background-color: rgba(255, 255, 255, 0.9);
+	padding-bottom: 65px;
+	padding-top: 81px;
+}
+
+.p-cast__items--under {
+	flex-wrap: wrap;
+}
+
+.p-cast__item--under {
+	margin-right: 30px;
+	width: calc(100% / 3 - 30px * 2 / 3);
+}
+
+.p-cast__item--under:nth-child(3n) {
+	margin-right: 0;
+}
+
+.p-cast__item--under:nth-child(n + 4) {
+	margin-top: 55px;
+}
+
+.p-cast__country--under {
+	font-size: 1.0575rem;
+	margin-top: 0;
+}
+
+.p-cast__name--under {
+	font-size: 1.41rem;
+	margin-top: 10px;
+}
+
+.p-cast__title--under {
+	margin-top: 15px;
+}
+
+/*=======================
 p-comic
 ====================== */
 
@@ -468,7 +572,7 @@ p-comments
 ====================== */
 
 .p-comments {
-	margin-top: 27.9px;
+	margin-top: 32px;
 	padding-bottom: 8px;
 }
 
@@ -1001,6 +1105,7 @@ p-top-cast
 ====================== */
 
 .p-top-cast {
+	margin-top: 27px;
 	padding-top: 28px;
 }
 
@@ -1021,6 +1126,8 @@ p-top-comments
 ====================== */
 
 .p-top-comments {
+	margin-top: 29px;
+	padding-bottom: 8px;
 	padding-top: 34px;
 }
 
@@ -1405,6 +1512,70 @@ u-margin--top
 	text-align: center;
 }
 
+.p-cast__wrap--middle {
+	margin-top: 70px;
+}
+
+.p-cast__items--middle {
+	display: flex;
+}
+
+.p-cast__item--middle {
+	flex-direction: column;
+}
+
+.p-cast__item--middle:nth-child(n + 3) {
+	margin-top: 40px;
+}
+
+.p-cast__img--middle {
+	margin: 0 auto;
+}
+
+.p-cast__country--middle,
+.p-cast__name--middle,
+.p-cast__title--middle {
+	text-align: center;
+}
+
+.p-cast__wrap--under {
+	padding-bottom: 35px;
+	padding-top: 40px;
+}
+
+.p-cast__items--under {
+	display: flex;
+}
+
+.p-cast__item--under {
+	width: calc(100% / 2 - 30px * 1 / 2);
+}
+
+.p-cast__item--under:nth-child(3n) {
+	margin-right: 30px;
+}
+
+.p-cast__item--under:nth-child(2n) {
+	margin-right: 0;
+}
+
+.p-cast__item--under:nth-child(n + 3) {
+	margin-top: 40px;
+}
+
+.p-cast__country--under {
+	line-height: 1.5;
+	margin-top: 0;
+}
+
+.p-cast__name--under {
+	line-height: 1.5;
+}
+
+.p-cast__title--under {
+	line-height: 1.5;
+}
+
 .p-comic__wrap {
 	margin-top: 20px;
 }
@@ -1758,6 +1929,15 @@ u-margin--top
 }
 
 @media screen and (max-width: 425px) {
+
+.p-cast__item--middle {
+	margin-right: 0;
+	width: 100%;
+}
+
+.p-cast__item--middle:nth-child(n + 2) {
+	margin-top: 40px;
+}
 
 .p-intro__sub-title {
 	font-size: 1.125rem;

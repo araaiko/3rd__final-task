@@ -1,13 +1,13 @@
 // 横スクロールメニューの矢印をクリックでメニューの両端に移動する
-$(function () {
-    $('.js-scroll-right').click(function (e) {
-        $('.js-global-nav').animate({
+jQuery(function () {
+    jQuery('.js-scroll-right').click(function (e) {
+        jQuery('.js-global-nav').animate({
             scrollLeft: 799.64
         }, 500, 'swing');
     });
 
-    $('.js-scroll-left').click(function (e) {
-        $('.js-global-nav').animate({
+    jQuery('.js-scroll-left').click(function (e) {
+        jQuery('.js-global-nav').animate({
             scrollLeft: 0
         }, 500, 'swing');
     });
@@ -15,8 +15,8 @@ $(function () {
 
 // 横スクロールメニューの左右の矢印を表示/非表示にする
 jQuery('.js-global-nav').on("scroll", function () {
-    var scrollPosition = $(".js-global-nav").scrollLeft();
-    var maxPosition = $('.js-global-nav').get(0).scrollWidth - $('.js-global-nav').get(0).clientWidth;
+    var scrollPosition = jQuery(".js-global-nav").scrollLeft();
+    var maxPosition = jQuery('.js-global-nav').get(0).scrollWidth - jQuery('.js-global-nav').get(0).clientWidth;
 
     // 左の矢印の表示/非表示
     if (0 < scrollPosition) {
