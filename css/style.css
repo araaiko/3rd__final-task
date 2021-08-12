@@ -665,6 +665,100 @@ p-comments
 }
 
 /*=======================
+p-contact
+====================== */
+
+.p-contact {
+	margin-top: 33px;
+}
+
+.p-contact__form-wrap {
+	background-color: rgba(255, 255, 255, 0.29);
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 27px;
+	max-width: 810px;
+	padding: 24px 30.3px 34.9px 30px;
+	width: 100%;
+}
+
+.p-contact__lead-text {
+	font-size: 1.125rem;
+	font-weight: bold;
+	line-height: 1.66667;
+}
+
+.p-contact__form {
+	margin-top: 27px;
+}
+
+.p-contact__form-item {
+	align-items: center;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.p-contact__form-item + .p-contact__form-item {
+	margin-top: 17px;
+}
+
+.p-contact__form-item--label {
+	margin-right: 16px;
+	text-align: right;
+}
+
+.p-contact__form-item--label label {
+	font-size: 1.125rem;
+	font-weight: bold;
+	line-height: 1.66667;
+}
+
+.p-contact__form-item--input {
+	max-width: 520px;
+	width: 100%;
+}
+
+.p-contact__form-item--input input,
+.p-contact__form-item--input textarea {
+	background-color: rgba(255, 255, 255, 0.7);
+	border: 0;
+	border-radius: 0;
+	color: #333;
+	font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴシック", "Hiragino Sans", "メイリオ", "Meiryo", sans-serif;
+	font-size: 1.125rem;
+	font-weight: bold;
+	line-height: 1.66667;
+	padding: 6px 6px 7px 6px;
+	width: 100%;
+}
+
+.p-contact__form-item--input input:focus,
+.p-contact__form-item--input textarea:focus {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 0;
+	outline: 0;
+}
+
+.p-contact__form-item--input textarea {
+	min-height: 165px;
+}
+
+input[type="submit"] {
+	background-color: #c63205;
+	border: 0;
+	color: #fff;
+	display: block;
+	font-size: 1.125rem;
+	font-weight: bold;
+	height: 60px;
+	line-height: 1.22222;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 28px;
+	width: 200px;
+}
+
+/*=======================
 Footer Copyright
 ====================== */
 
@@ -1625,6 +1719,36 @@ u-margin--top
 	margin-right: 0;
 	max-width: 100%;
 	width: 100%;
+}
+
+.p-contact__lead-text {
+	font-size: 1rem;
+}
+
+.p-contact__form-item {
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 510px;
+	width: 100%;
+}
+
+.p-contact__form-item--label label {
+	font-size: 1rem;
+}
+
+.p-contact__form-item--label {
+	margin-right: auto;
+}
+
+.p-contact__form-item--input input,
+.p-contact__form-item--input textarea {
+	font-size: 1rem;
+}
+
+input[type="submit"] {
+	font-size: 1rem;
+	width: 193px;
 }
 
 .p-copyright {

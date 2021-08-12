@@ -1,0 +1,123 @@
+/*=======================
+p-contact
+====================== */
+.p-contact {
+    margin-top: 33px;
+}
+
+.p-contact__form-wrap {
+    background-color: rgba(255, 255, 255, 0.29);
+    width: 100%;
+    max-width: 810px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 27px;
+    padding: 24px 30.3px 34.9px 30px;
+}
+
+.p-contact__lead-text {
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: (30 / 18);
+
+    @include mq('sp') {
+        font-size: 1rem;
+    }
+}
+
+.p-contact__form {
+    margin-top: 27px;
+}
+
+.p-contact__form-items {
+}
+
+.p-contact__form-item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    & + & {
+        margin-top: 17px;
+    }
+
+    @include mq('sp') {
+        flex-direction: column;
+        width: 100%;
+        max-width: 510px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.p-contact__form-item--label {
+    text-align: right;
+    margin-right: 16px;
+
+    label {
+        font-weight: bold;
+        font-size: 1.125rem;
+        line-height: (30 / 18);
+
+        @include mq('sp') {
+            font-size: 1rem;
+        }
+    }
+
+    @include mq('sp') {
+        margin-right: auto;
+    }
+}
+
+.p-contact__form-item--input {
+    width: 100%;
+    max-width: 520px;
+
+    input,
+    textarea {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+        border: 0;
+        font-weight: bold;
+        font-size: 1.125rem;
+        line-height: (30 / 18);
+        padding: 6px 6px 7px 6px;
+        border-radius: 0;
+        font-family: $font-family--ja;
+        color: $color-3;
+
+        &:focus {
+            outline: 0;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            border-radius: 0;
+        }
+
+        @include mq('sp') {
+            font-size: 1rem;
+        }
+    }
+
+    textarea {
+        min-height: 165px;
+    }
+}
+
+input[type="submit"] {
+    width: 200px;
+    height: 60px;
+    border: 0;
+    background-color: $color-8;
+    color: $color-1;
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: (22 / 18);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28px;
+    display: block;
+
+    @include mq('sp') {
+        width: 193px;
+        font-size: 1rem;
+    }
+}
