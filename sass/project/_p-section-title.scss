@@ -1,8 +1,15 @@
 /*=======================
-p-title
+p-section-title
 ====================== */
 .p-section-title {
     font-family: $font-family--en;
     font-size: 2.6875rem;
     text-align: center;
+}
+
+.p-section-title__404-title {
+    @include mq('sp') {
+        font-size: 1.625rem;
+        font-weight: bold;
+    }
 }

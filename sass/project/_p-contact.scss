@@ -13,6 +13,10 @@ p-contact
     margin-right: auto;
     margin-top: 27px;
     padding: 24px 30.3px 34.9px 30px;
+
+    @include mq('sp') {
+        padding: 20px 12px;
+    }
 }
 
 .p-contact__lead-text {
@@ -27,9 +31,6 @@ p-contact
 
 .p-contact__form {
     margin-top: 27px;
-}
-
-.p-contact__form-items {
 }
 
 .p-contact__form-item {
@@ -118,6 +119,49 @@ input[type="submit"] {
 
     @include mq('sp') {
         width: 193px;
+        font-size: 1rem;
+    }
+}
+
+/*=======================
+p-contact thanks message
+====================== */
+.p-contact__form-wrap--thanks {
+    padding-bottom: 26px;
+}
+
+.p-contact__thanks-message-text {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: (30 / 18);
+
+    @include mq('sp') {
+        font-size: 1rem;
+    }
+}
+
+/*=======================
+p-contact 404 message
+====================== */
+.p-contact__404-message-text {
+    font-size: 1.125rem;
+    font-weight: bold;
+    line-height: (30 / 18);
+    text-align: center;
+
+    &--top {
+        font-size: 1.875rem;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 20px;
+
+        @include mq('sp') {
+            font-size: 1.5rem;
+        }
+    }
+
+    @include mq('sp') {
         font-size: 1rem;
     }
 }
