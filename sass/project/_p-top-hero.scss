@@ -42,6 +42,10 @@ p-top-hero
     p:nth-child(n + 2) {
         margin-top: 7px;
     }
+
+    @include mq('sp') {
+        width: 100%;
+    }
 }
 
 .p-top-hero__desc {

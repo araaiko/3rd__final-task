@@ -1069,7 +1069,7 @@ p-schedule
 	background-color: rgba(255, 255, 255, 0.29);
 	margin: 0 auto;
 	max-width: 800px;
-	padding: 33px 72px 60px;
+	padding: 33px 0px 60px;
 	width: 100%;
 }
 
@@ -1133,7 +1133,6 @@ p-schedule
 
 .p-schedule__body {
 	margin-top: 32px;
-	max-width: 656px;
 	width: 100%;
 }
 
@@ -1151,7 +1150,7 @@ p-section-title
 ====================== */
 
 .p-section-title {
-	font-family: "Futura-CondensedMedium", "Century Gothic", sans-serif;
+	font-family: "Futura-CondensedMedium", "futura-pt-condensed", "Century Gothic", sans-serif;
 	font-size: 2.6875rem;
 	text-align: center;
 }
@@ -2010,6 +2009,10 @@ input[type="submit"] {
 .p-top-hero__secondary-wrap {
 	display: block;
 	margin-top: 20px;
+}
+
+.p-top-hero__desc-wrap {
+	width: 100%;
 }
 
 .p-top-hero__desc {
